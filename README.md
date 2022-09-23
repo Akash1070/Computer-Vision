@@ -1,20 +1,6 @@
 # **Building A Big Mart Sales Prediction**
 
 ![Python 3.6](https://img.shields.io/badge/Python-3.6-brightgreen.svg)
-![HTML 4.01](https://img.shields.io/badge/HTML-4.01-skyblue.svg)
-![CSS3](https://img.shields.io/badge/CSS3-pink.svg)
-![sklearn](https://img.shields.io/badge/Library-sklearn-orange.svg)
-![Numpy](https://img.shields.io/badge/Library-Numpy-blue.svg)
-![flask](https://img.shields.io/badge/Library-flask-white.svg)
-![pyforest](https://img.shields.io/badge/Library-pyforest-red.svg)
-
-• This repository consists of files required to deploy a ___Machine Learning Web App___ created with ___Flask___ on ___Heroku___ platform.
-
-• If you want to view the deployed model, click on the following link:
-https://ipl-score-prediction-app458.herokuapp.com/
-
-• Please do ⭐ the repository, if it helped you in anyway.
-
 
 ## Authors
 
@@ -27,24 +13,40 @@ https://ipl-score-prediction-app458.herokuapp.com/
     2. Exploratory Data Analysis(EDA)
     3. Feature Engineering
     4. Model Building and Tuning
-    5. Building Flask API
-    6. Pushing code to Github
-    7. Connecting to your Heroku account 
-    8. Deploy App
-
-
+    
 ## Installation
 
 To install the libraries used in this project. Follow the 
 below steps:
 
 ```bash
-from flask import Flask, render_template, request
-import pickle
-import numpy as np
-from sklearn.linear_model import LinearRegression
-import pandas as pd
-import pickle
+%tensorflow_version 2.x
+import tensorflow
+tensorflow.__version__
+
+import numpy as np # linear algebra
+import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+import matplotlib.pyplot as plt # plotting library
+%matplotlib inline
+from keras.models import Sequential
+import tensorflow as tf
+from tensorflow.keras.optimizers import Adam # - Works ,RMSprop
+from tensorflow.keras.utils import to_categorical, plot_model
+from keras import  backend as K
+from tensorflow.keras.datasets import mnist
+from keras.layers import Dense
+from keras.layers.convolutional import Conv2D, MaxPooling2D
+# from keras.models import Sequential
+from keras.layers import Activation, Flatten, Dropout
+from tensorflow.keras.layers import BatchNormalization
+from keras.layers.advanced_activations import LeakyReLU
+from keras.datasets import fashion_mnist
+import random
+random.seed(0)
+
+# Ignore the warnings
+import warnings
+warnings.filterwarnings("ignore")
 
 ```
     
@@ -55,19 +57,6 @@ To run tests, run the following command
 ```bash
   python app.py
 ```
-
-## Running Heroku Tests
-
-To run a Heroku deployment tests, click on the following link:
-
-[IPL First Innings Score Prediction App](https://ipl-score-prediction-app458.herokuapp.com/)
-## Demo
-
-[Click HERE To View App](http://localhost:8501/)
-
-## Preview
-![Click HERE To View](https://github.com/Akash1070/Covid-19-Dasboard-for-Berlin-City/blob/main/Preview.png)
-
 
 ## 🚀 About Me
 
