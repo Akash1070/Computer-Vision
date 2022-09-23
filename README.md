@@ -10,9 +10,13 @@
 ## Deployment
 
     1. Data Extraction
-    2. Exploratory Data Analysis(EDA)
-    3. Feature Engineering
-    4. Model Building and Tuning
+    2. Analyze the Data
+    3. Data Preprocessing.
+    4. Building CNN Architecture
+    5. Train the Model
+    6. Model Evaluation on the Test Set
+    7. Adding Dropout into the Network
+    8. Final loss and accuracy
     
 ## Installation
 
