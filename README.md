@@ -1,4 +1,4 @@
-# **Building A Big Mart Sales Prediction**
+# **Building and Deploying Models of Computer Vision**
 
 ![Python 3.6](https://img.shields.io/badge/Python-3.6-brightgreen.svg)
 
